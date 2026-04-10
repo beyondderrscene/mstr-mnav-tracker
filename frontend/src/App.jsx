@@ -3,7 +3,7 @@ import axios from "axios";
 import Draggable from "react-draggable";
 import MNavChart from "./components/MNavChart";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const RANGES = [
   { label: "1M", days: 30 },
